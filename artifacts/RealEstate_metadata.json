@@ -1,0 +1,176 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "propertyId",
+						"type": "uint256"
+					}
+				],
+				"name": "PropertySold",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyId",
+						"type": "uint256"
+					}
+				],
+				"name": "buyProperty",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "listPropertiesForSale",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "properties",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "forSale",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "propertyIds",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RealEstate.sol": "RealEstate"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"RealEstate.sol": {
+			"keccak256": "0x02c061e115af6c1ab784210cec6d4beb7d6ad58afb0aac52d450d88b630403b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://76f8406206c40b3f5a053b74c44593ef93b3187dfa9281ceb0da5fed05653a40",
+				"dweb:/ipfs/QmbLAHmXZw7Q35YLZ47M4Kr1QoEtDE5v1Z1hHe8m3t9k3G"
+			]
+		},
+		"math/SafeMath.sol": {
+			"keccak256": "0x7108f0d3d875dae77e7353a6f9047a71d4f61956d1fd6c9dc2079eb6f510c841",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b1b018825835b66ff4889a68f21a95ef0e567b04d4dbee380c5858a0ea26d26",
+				"dweb:/ipfs/QmQkqQVY7xE9Bq6j8xY7AWtVKdUC7N5wLFXkcCqThfnANU"
+			]
+		}
+	},
+	"version": 1
+}
